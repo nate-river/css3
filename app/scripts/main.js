@@ -5,7 +5,6 @@ $(function(){
         var key = v['spec name'];
         if ( ! categorys[ key ] ){
           categorys[ key ] = [];
-          console.log(key);
         }
         categorys[ key ].push(v);
       })

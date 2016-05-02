@@ -1,5 +1,233 @@
 [
     {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "*",
+        "Initial": "any element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E",
+        "Initial": "an element of type E"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo]",
+        "Initial": "an E element with a \"foo\" attribute"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo=\"bar\"]",
+        "Initial": "an E element whose \"foo\" attribute value is exactly      equal to \"bar\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo~=\"bar\"]",
+        "Initial": "an E element whose \"foo\" attribute value is a list of      whitespace-separated values, one of which is exactly equal to \"bar\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo^=\"bar\"]",
+        "Initial": "an E element whose \"foo\" attribute value begins      exactly with the string \"bar\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo$=\"bar\"]",
+        "Initial": "an E element whose \"foo\" attribute value ends exactly      with the string \"bar\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo*=\"bar\"]",
+        "Initial": "an E element whose \"foo\" attribute value contains the      substring \"bar\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E[foo|=\"en\"]",
+        "Initial": "an E element whose \"foo\" attribute has a      hyphen-separated list of values beginning (from the left) with \"en\""
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:root",
+        "Initial": "an E element, root of the document"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:nth-child(n)",
+        "Initial": "an E element, the n-th child of its parent"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:nth-last-child(n)",
+        "Initial": "an E element, the n-th child of its parent, counting      from the last one"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:nth-of-type(n)",
+        "Initial": "an E element, the n-th sibling of its type"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:nth-last-of-type(n)",
+        "Initial": "an E element, the n-th sibling of its type, counting      from the last one"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:first-child",
+        "Initial": "an E element, first child of its parent"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:last-child",
+        "Initial": "an E element, last child of its parent"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:first-of-type",
+        "Initial": "an E element, first sibling of its type"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:last-of-type",
+        "Initial": "an E element, last sibling of its type"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:only-child",
+        "Initial": "an E element, only child of its parent"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:only-of-type",
+        "Initial": "an E element, only sibling of its type"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:empty",
+        "Initial": "an E element that has no children (including text      nodes)"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:link<br>      E:visited",
+        "Initial": "an E element being the source anchor of a hyperlink of      which the target is not yet visited (:link) or already visited      (:visited)"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:active<br>      E:hover<br>      E:focus",
+        "Initial": "an E element during certain user actions"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:target",
+        "Initial": "an E element being the target of the referring URI"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:lang(fr)",
+        "Initial": "an element of type E in language \"fr\" (the document      language specifies how language is determined)"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:enabled<br>      E:disabled",
+        "Initial": "a user interface element E which is enabled or      disabled"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:checked<!--<br>E:indeterminate-->",
+        "Initial": "a user interface element E which is      checked<!-- or in an      indeterminate state--> (for instance a      radio-button or checkbox)"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E::first-line",
+        "Initial": "the first formatted line of an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E::first-letter",
+        "Initial": "the first formatted letter of an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E::before",
+        "Initial": "generated content before an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E::after",
+        "Initial": "generated content after an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E.warning",
+        "Initial": "an E element whose class is \"warning\" (the document      language specifies how class is determined)."
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E#myid",
+        "Initial": "an E element with ID equal to \"myid\"."
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E:not(s)",
+        "Initial": "an E element that does not match simple selector s"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E F",
+        "Initial": "an F element descendant of an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E &gt; F",
+        "Initial": "an F element child of an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E + F",
+        "Initial": "an F element immediately preceded by an E element"
+    },
+    {
+        "spec name": "Selectors Level 3",
+        "uri": "http://www.w3.org/TR/css3-selectors",
+        "Name": "E ~ F",
+        "Initial": "an F element preceded by an E element"
+    },
+    {
         "spec name": "CSS Animations",
         "uri": "http://www.w3.org/TR/css3-animations",
         "category": "css-property",

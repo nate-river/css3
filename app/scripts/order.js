@@ -5,13 +5,13 @@
 "CSS Backgrounds and Borders Module Level 3",
 "CSS Basic User Interface Module Level 3",
 "CSS Device Adaptation",
-"CSS3 module: line",
 "CSS3 module: Border",
 
 "CSS Fonts Module Level 3",
 "CSS Color Module Level 3",
 "CSS Text Decoration Module Level 3",
 "CSS Text Module Level 3",
+"CSS3 module: line",
 
 
 "CSS Animations",
@@ -54,18 +54,28 @@
 
 var order = [
   {
+    h1:'CSS  Selectors Level 3',
+    h2s:[
+      [
+        "Selectors Level 3",
+      ],
+    ]
+  },
+  {
     h1:'CSS basic',
     h2s:[
       [
         "CSS basic box model",
-        "CSS Overflow Module Level 3",
+        "CSS Grid Positioning Module Level 3",
       ],
       [
         "CSS Backgrounds and Borders Module Level 3",
+        "CSS Overflow Module Level 3",
       ],
       [
         "CSS Basic User Interface Module Level 3",
         "CSS Device Adaptation",
+        "CSS Lists and Counters Module Level 3",
       ],
     ]
   },
@@ -73,12 +83,13 @@ var order = [
     h1:'Font',
     h2s:[
       [
-        "CSS Fonts Module Level 3",
+        "CSS Text Decoration Module Level 3",
+        "CSS3 module: line",
         "CSS Color Module Level 3",
       ],
       [
+        "CSS Fonts Module Level 3",
         "CSS Text Module Level 3",
-        "CSS Text Decoration Module Level 3",
       ],
     ]
   },
@@ -101,12 +112,8 @@ var order = [
       ],
       [
         "CSS Template Layout Module",
-        "CSS3 module: line",
         "CSS Multi-column Layout Module",
-      ],
-      [
         "CSS Box Alignment Module Level 3",
-        "CSS Grid Positioning Module Level 3",
       ],
     ]
   },
@@ -123,21 +130,20 @@ var order = [
     h2s:[
       [
         "CSS Speech Module",
-        "CSS Masking Level 1",
-      ],
-      [
         "CSS Exclusions Module Level 1",
         "CSS Regions Module Level 1",
-        "CSS Writing Modes Module Level 3",
-        "CSS Fragmentation Module Level 3",
-        "CSS Generated Content for Paged Media Module",
-        "CSS3 Ruby Module",
+        "CSS3 module: Presentation Levels",
       ],
       [
-        "CSS Marquee Module Level 3",
-        "CSS Lists and Counters Module Level 3",
+        "CSS Fragmentation Module Level 3",
+        "CSS Writing Modes Module Level 3",
+        "CSS Generated Content for Paged Media Module",
+        "CSS3 Ruby Module",
         "CSS3 Hyperlink Presentation Module",
-        "CSS3 module: Presentation Levels",
+      ],
+      [
+        "CSS Masking Level 1",
+        "CSS Marquee Module Level 3",
         "CSS3 Generated and Replaced Content Module",
       ],
     ]
