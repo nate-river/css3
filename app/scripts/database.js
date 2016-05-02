@@ -1,4 +1,4 @@
-[
+var database = [
     {
         "spec name": "Selectors Level 3",
         "uri": "http://www.w3.org/TR/css3-selectors",
@@ -5416,4 +5416,4 @@
         "Media": "visual",
         "Computed value": "specified values (except for initial and inherit)"
     }
-]
+];
