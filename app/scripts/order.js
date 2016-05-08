@@ -52,6 +52,7 @@
 
 */
 
+/*eslint no-unused-vars: "error"*/
 var order = [
   {
     h1:'CSS  Selectors Level 3',
