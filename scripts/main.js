@@ -116,7 +116,7 @@ $(function () {
                 var className = 'removed old-version';
               }
             }
-            return '<li >' + '<a    class="' + className + '"   target="_blank" href="' + data.uri + '" title="' + data.Initial + '" ' + 'data-apply="' + data['Applies To'] + '" ' + 'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' + name + '</a>' + '</li>';
+            return '<li >' + '<a    class="' + className + '"   target="_blank"  href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/' + name + '" ctrl_href="' + data.uri + '" title="' + data.Initial + '" ' + 'data-apply="' + data['Applies To'] + '" ' + 'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' + name + '</a>' + '</li>';
           }).join('') + '</ul>' + '</section>';
         }).join('') + '</div>';
       }).join('') + '</div>' + '</article>';
