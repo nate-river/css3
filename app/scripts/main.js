@@ -39,12 +39,12 @@ $(function () {
                   }
 
                   if (name && !($.camelCase($.trim(name)) in div.style)) {
-                    if(key !=="Selectors Level 3"){
+                    if (key !== "Selectors Level 3") {
                       var className = 'removed old-version';
                     }
                   }
                   return '<li >' +
-                    '<a    class="' + className + '"   target="_blank" href="' + data.uri + '" title="' + data.Initial + '" ' +
+                    '<a    class="' + className + '"   target="_blank"  href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/' + name + '" ctrl_href="' + data.uri + '" title="' + data.Initial + '" ' +
                     'data-apply="' + data['Applies To'] + '" ' +
                     'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' +
                     name +
