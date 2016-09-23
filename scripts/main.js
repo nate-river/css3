@@ -91,6 +91,8 @@ var order = [{
 
 $(function () {
   var categorys = {};
+  var div = document.createElement('div');
+
   $.each(database, function (_, v) {
     var key = v['spec name'];
     if (!categorys[key]) {
@@ -108,7 +110,13 @@ $(function () {
             if (data.Name) {
               var name = data.Name.indexOf(',') !== -1 ? data.Name.split(',')[0] : data.Name;
             }
-            return '<li>' + '<a target="_blank" href="' + data.uri + '" title="' + data.Initial + '" ' + 'data-apply="' + data['Applies To'] + '" ' + 'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' + name + '</a>' + '</li>';
+
+            if (name && !($.camelCase($.trim(name)) in div.style)) {
+              if (key !== "Selectors Level 3") {
+                var className = 'removed old-version';
+              }
+            }
+            return '<li >' + '<a    class="' + className + '"   target="_blank" href="' + data.uri + '" title="' + data.Initial + '" ' + 'data-apply="' + data['Applies To'] + '" ' + 'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' + name + '</a>' + '</li>';
           }).join('') + '</ul>' + '</section>';
         }).join('') + '</div>';
       }).join('') + '</div>' + '</article>';
