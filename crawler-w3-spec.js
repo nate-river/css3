@@ -1,4 +1,19 @@
-'use strict';
+"use strict";
+var request = require('request');
+var cheerio = require('cheerio');
+
+request('https://www.w3.org/TR/css-lists-3/', function (err, res, body) {
+  if (!err && res.statusCode === 200) {
+    var $ = cheerio.load(body);
+    $('.proptable.data tbody tr').each(function (i, v) {
+      console.log($(v).find('a').text());
+      $(v).find('td').each(function (i, v) {
+        console.log($(v).text())
+      })
+    })
+  }
+});
+
 var urls = [
   'http://www.w3.org/TR/css3-selectors',
   'http://www.w3.org/TR/css3-animations',
@@ -44,12 +59,12 @@ var urls = [
   'http://www.w3.org/TR/css3-linebox'
 ];
 
-var exec = require('child_process').exec;
-
-urls.forEach(function(v){
-  // var tmp = v.split('/');
-  // var fileName = tmp[tmp.length-1] + '.html';
-  exec('wget -p ' + v, function (error, stdout, stderr) {
-    console.log(error, stdout, stderr);
-  });
-});
+// var exec = require('child_process').exec;
+//
+// urls.forEach(function(v){
+//   // var tmp = v.split('/');
+//   // var fileName = tmp[tmp.length-1] + '.html';
+//   exec('wget -p ' + v, function (error, stdout, stderr) {
+//     console.log(error, stdout, stderr);
+//   });
+// });
