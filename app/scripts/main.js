@@ -1,19 +1,17 @@
-'use strict';
-
 /*global $ $:true*/
 /*global database database:true*/
 /*global order order:true*/
 /*eslint no-undef: "error"*/
 $(function () {
-  var categorys = {};
+  var categories = {};
   var div = document.createElement('div');
 
   $.each(database, function (_, v) {
     var key = v['spec name'];
-    if (!categorys[key]) {
-      categorys[key] = [];
+    if (!categories[key]) {
+      categories[key] = [];
     }
-    categorys[key].push(v);
+    categories[key].push(v);
   });
   $('.main-content').append(function () {
     return $.map(order, function (v, i) {
@@ -31,7 +29,7 @@ $(function () {
                 '<h2>' + key + '</h2>' +
                 '<ul>' +
 
-                $.map(categorys[key], function (data) {
+                $.map(categories[key], function (data) {
                   if (data.Name) {
                     var name = (data.Name.indexOf(',') !== -1) ?
                       (data.Name.split(',')[0]) :
