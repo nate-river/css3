@@ -26,7 +26,7 @@ $(function () {
 
             $.map(h2, function (key) {
               return '<section>' +
-                '<h2>' + key + '</h2>' +
+                '<a class="title-link" target="_blank" href="' + categories[key][0].uri + '"><h2>' + key + '</h2></a>' +
                 '<ul>' +
 
                 $.map(categories[key], function (data) {
@@ -41,8 +41,18 @@ $(function () {
                       var className = 'removed old-version';
                     }
                   }
+
+                  var href;
+                  if (key === "Selectors Level 3") {
+                    href = 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors';
+                  } else if (key === 'CSS Device Adaptation') {
+                    href = 'https://developer.mozilla.org/en-US/docs/Web/CSS/@viewport';
+                  } else {
+                    href = 'https://developer.mozilla.org/zh-CN/docs/Web/CSS/' + name;
+                  }
+
                   return '<li >' +
-                    '<a    class="' + className + '"   target="_blank"  href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/' + name + '" ctrl_href="' + data.uri + '" title="' + data.Initial + '" ' +
+                    '<a    class="' + className + '"   target="_blank"  href="' + href + '" title="' + data.Initial + '" ' +
                     'data-apply="' + data['Applies To'] + '" ' +
                     'data-value="' + data.Value + '" data-initial="' + data.Initial + '">' +
                     name +

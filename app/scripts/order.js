@@ -53,6 +53,7 @@
  */
 
 /*eslint no-unused-vars: "error"*/
+
 var order = [
   {
     h1: 'CSS  Selectors Level 3',
@@ -84,13 +85,13 @@ var order = [
     h1: 'Font',
     h2s: [
       [
-        "CSS Text Decoration Module Level 3",
+        "CSS Fonts Module Level 3",
         "CSS3 module: line",
-        "CSS Color Module Level 3",
       ],
       [
-        "CSS Fonts Module Level 3",
+        "CSS Text Decoration Module Level 3",
         "CSS Text Module Level 3",
+        "CSS Color Module Level 3",
       ],
     ]
   },
@@ -108,13 +109,12 @@ var order = [
     h1: 'Layout',
     h2s: [
       [
-        "CSS Grid Layout",
         "CSS Flexible Box Layout Module",
+        "CSS Box Alignment Module Level 3",
       ],
       [
-        "CSS Template Layout Module",
         "CSS Multi-column Layout Module",
-        "CSS Box Alignment Module Level 3",
+        "CSS Grid Layout",
       ],
     ]
   },

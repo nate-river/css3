@@ -4246,19 +4246,6 @@ var database = [
         "Computed Value": "see individual properties"
     },
     {
-        "spec name": "CSS Lists and Counters Module Level 3",
-        "uri": "http://www.w3.org/TR/css3-lists",
-        "category": "css-property",
-        "Property": "‘display’",
-        "New Value": "‘marker’",
-        "Initial": "same as CSS2.1",
-        "Applies to": "same as CSS2.1",
-        "Inherited": "same as CSS2.1",
-        "Percentages": "same as CSS2.1",
-        "Media": "same as CSS2.1",
-        "Computed value": "same as CSS2.1"
-    },
-    {
         "spec name": "CSS 3D Transforms Module Level 3",
         "uri": "http://www.w3.org/TR/css3-3d-transforms",
         "category": "css-property",
