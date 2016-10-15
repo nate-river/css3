@@ -6,3 +6,9 @@ bower_components
 test/bower_components
 app
 .idea
+.yo-rc.json
+.gitattributes
+.editorconfig
+.bowerrc
+.babelrc
+
